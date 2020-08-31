@@ -1,6 +1,7 @@
-{% extends 'base.html' %}
+<h1>Message board</h1>
 
-
-{% block content %}
-    <h1>HomePage in templates</h1>
-{% endblock %}
+<ul>
+    {% for post in object_list %}
+        <li>{{post}}</li>
+    {% endfor %}
+</ul>
